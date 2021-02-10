@@ -732,6 +732,8 @@ Function Get-SpoolStatus {
 $ComputerName = $ComputerName.TrimEnd()
 $spoolstatus = $rprn.CheckIfTheSpoolerIsActive($ComputerName)
 
+
+Write-Output "`nExtracting the information xD`nComputerName spoolstatus `n-------------------------------"
 Write-Output "$ComputerName $spoolstatus"
 
 }
